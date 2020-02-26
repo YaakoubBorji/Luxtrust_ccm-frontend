@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-6 mx-auto">
+    <form (ngSubmit)="doSend()" [formGroup]="loginForm">
+      <div class="form-group row">
+        <input
+          formControlName="login"
+          class="form-control"
+          type="email"
+          name="login"
+          placeholder="login"
+        />
+        <div *ngIf="verifier('login', 'required')" class="input-error">
+          Champ obligatoire
+        </div>
+      </div>
+      <div class="form-group row">
+        <input
+          class="form-control"
+          formControlName="password"
+          type="password"
+          name="password"
+          placeholder="password"
+        />
+        <div *ngIf="verifier('password', 'required')" class="input-error">
+          Champ obligatoire
+        </div>
+        <div *ngIf="erreurMessage" class="input-error">
+          Erreur : {{erreurMessage}}
+        </div>
+      </div>
+      <div class="form-group row align-items-center">
+        <div class="mx-auto">
+          <button class="btn btn-primary">Submit</button>
+        </div>
+        <div class="mx-auto">
+          <button class="btn btn-primary" routerLinkActive="active" [routerLink]="['/createuser']">Create User</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

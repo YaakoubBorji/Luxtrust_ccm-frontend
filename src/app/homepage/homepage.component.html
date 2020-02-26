@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-6 mx-auto" style="margin-top:20px;">
+    <button style="margin-left:20px;margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/positionFacade']">Position</button>
+    <button style="margin-left:20px;margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/users']">User</button>
+    <button style="margin-left:20px;margin-bottom:20px;" type="button" class="btn btn-primary" (click)="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-8 mx-auto">
+    <div class="col-12" style="margin-top:50px;padding:20px;">
+      <h3 class="col-12">Hello  {{ user.firstName }} {{user.familyName}} </h3>
+      <p>Welcome in the crypto market home page, you can navigate by above menu.</p>
+    </div>
+  </div>
+</div>
+
+
+
+

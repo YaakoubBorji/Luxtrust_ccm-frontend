@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-6 mx-auto" style="margin-top:20px;">
+    <button style="margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/users']">Users</button>
+
+    <button style="margin-left:20px;margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/Home']">Home Page</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 mx-auto">
+    <input placeholder="search" [(ngModel)]="search"/>
+  </div>
+</div>
+<div class="row">
+  <div class="col-8 mx-auto">
+    <div class="col-12" style="margin-top:20px;padding:20px;">
+      <h3 class="col-12">Users :</h3>
+      <ul class="list-group">
+        <li
+          *ngFor="let user of users|filtre:search"
+          class="list-group-item d-flex justify-content-between align-items-center" >
+          
+          <button class="btn btn-primary" (click)="redirect(user.userName)">
+             details for  : {{ user.userName }}
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

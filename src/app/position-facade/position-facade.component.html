@@ -1,0 +1,81 @@
+<button style="margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/createposition']">Add position</button>
+
+<button style="margin-left:20px;margin-bottom:20px;" type="button" class="btn btn-primary" routerLinkActive="active" [routerLink]="['/Home']">Home Page</button>
+<!-- Editable table -->
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">Open Position</h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Position ID</th>
+            <th class="text-center">Currency</th>
+            <th class="text-center">Amount</th>
+            <th class="text-center">User Name</th>
+            <th class="text-center">Status</th>
+            <th class="text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let position of openPositions" >
+            <td  class="pt-3-half" contenteditable="true">{{ position.positionId }}</td>
+           <td  class="pt-3-half" contenteditable="true">{{  position.currency }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.amount }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.user.userName }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.status }}</td>
+            <td>
+              <span class="table-remove"><button (click)="buyPosition(position.positionId)" type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Buy</button></span>
+            </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Editable table -->
+
+<!-- Editable table -->
+<div class="card">
+  <h3 class="card-header text-center font-weight-bold text-uppercase py-4">SOLD Position</h3>
+  <div class="card-body">
+    <div id="table" class="table-editable">
+      <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
+            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span>
+      <table class="table table-bordered table-responsive-md table-striped text-center">
+        <thead>
+          <tr>
+            <th class="text-center">Position ID</th>
+            <th class="text-center">Currency</th>
+            <th class="text-center">Amount</th>
+            <th class="text-center">User Name</th>
+            <th class="text-center">Status</th>
+            <th class="text-center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr  *ngFor="let position of soldPositions">
+            <td  class="pt-3-half" contenteditable="true">{{ position.positionId }}</td>
+           <td  class="pt-3-half" contenteditable="true">{{  position.currency }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.amount }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.user.userName }}</td>
+            <td  class="pt-3-half" contenteditable="true">{{ position.status }}</td>
+            <td>
+              <span class="table-remove"><button (click)="deletePosition(position.positionId)"  type="button"
+                  class="btn btn-danger btn-rounded btn-sm my-0">Remove</button></span>
+            </td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<!-- Editable table -->
+<div class="alert alert-success" role="alert" *ngIf="sucess">
+  {{message}}
+</div>
+<div class="alert alert-danger" role="alert" *ngIf="error">
+ {{message}}
+</div>

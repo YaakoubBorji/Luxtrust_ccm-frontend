@@ -1,0 +1,316 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   '-g',
+1 verbose cli   '@angular/cli' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly uninstall loadAllDepsIntoIdealtree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree lib
+21 silly currentTree └─┬ @angular/cli@9.0.2
+21 silly currentTree   ├── @angular-devkit/architect@0.900.2
+21 silly currentTree   ├── @angular-devkit/core@9.0.2
+21 silly currentTree   ├── @angular-devkit/schematics@9.0.2
+21 silly currentTree   ├── @schematics/angular@9.0.2
+21 silly currentTree   ├─┬ @schematics/update@0.900.2
+21 silly currentTree   │ └─┬ npm-package-arg@7.0.0
+21 silly currentTree   │   └── semver@5.7.1
+21 silly currentTree   ├── @yarnpkg/lockfile@1.1.0
+21 silly currentTree   ├── agent-base@4.3.0
+21 silly currentTree   ├── agentkeepalive@3.5.2
+21 silly currentTree   ├── ajv@6.10.2
+21 silly currentTree   ├── ansi-colors@4.1.1
+21 silly currentTree   ├── ansi-escapes@4.3.0
+21 silly currentTree   ├── ansi-regex@4.1.0
+21 silly currentTree   ├── ansi-styles@3.2.1
+21 silly currentTree   ├── aproba@1.2.0
+21 silly currentTree   ├── asap@2.0.6
+21 silly currentTree   ├── asn1@0.2.4
+21 silly currentTree   ├── assert-plus@1.0.0
+21 silly currentTree   ├── asynckit@0.4.0
+21 silly currentTree   ├── aws-sign2@0.7.0
+21 silly currentTree   ├── aws4@1.9.1
+21 silly currentTree   ├── balanced-match@1.0.0
+21 silly currentTree   ├── bcrypt-pbkdf@1.0.2
+21 silly currentTree   ├── bluebird@3.7.2
+21 silly currentTree   ├── brace-expansion@1.1.11
+21 silly currentTree   ├── buffer-from@1.1.1
+21 silly currentTree   ├── builtins@1.0.3
+21 silly currentTree   ├─┬ cacache@12.0.3
+21 silly currentTree   │ └── rimraf@2.7.1
+21 silly currentTree   ├── caseless@0.12.0
+21 silly currentTree   ├── chalk@2.4.2
+21 silly currentTree   ├── chardet@0.7.0
+21 silly currentTree   ├── chownr@1.1.4
+21 silly currentTree   ├── cli-cursor@3.1.0
+21 silly currentTree   ├── cli-spinners@2.2.0
+21 silly currentTree   ├── cli-width@2.2.0
+21 silly currentTree   ├── clone@1.0.4
+21 silly currentTree   ├── color-convert@1.9.3
+21 silly currentTree   ├── color-name@1.1.3
+21 silly currentTree   ├── combined-stream@1.0.8
+21 silly currentTree   ├── concat-map@0.0.1
+21 silly currentTree   ├── concat-stream@1.6.2
+21 silly currentTree   ├─┬ copy-concurrently@1.0.5
+21 silly currentTree   │ └── rimraf@2.7.1
+21 silly currentTree   ├── core-util-is@1.0.2
+21 silly currentTree   ├── cyclist@1.0.1
+21 silly currentTree   ├── dashdash@1.14.1
+21 silly currentTree   ├── debug@4.1.1
+21 silly currentTree   ├── debuglog@1.0.1
+21 silly currentTree   ├── defaults@1.0.3
+21 silly currentTree   ├── define-properties@1.1.3
+21 silly currentTree   ├── delayed-stream@1.0.0
+21 silly currentTree   ├── dezalgo@1.0.3
+21 silly currentTree   ├── duplexify@3.7.1
+21 silly currentTree   ├── ecc-jsbn@0.1.2
+21 silly currentTree   ├── emoji-regex@8.0.0
+21 silly currentTree   ├── encoding@0.1.12
+21 silly currentTree   ├── end-of-stream@1.4.4
+21 silly currentTree   ├── err-code@1.1.2
+21 silly currentTree   ├── es-abstract@1.17.4
+21 silly currentTree   ├── es-to-primitive@1.2.1
+21 silly currentTree   ├── es6-promise@4.2.8
+21 silly currentTree   ├── es6-promisify@5.0.0
+21 silly currentTree   ├── escape-string-regexp@1.0.5
+21 silly currentTree   ├── extend@3.0.2
+21 silly currentTree   ├── external-editor@3.1.0
+21 silly currentTree   ├── extsprintf@1.3.0
+21 silly currentTree   ├── fast-deep-equal@2.0.1
+21 silly currentTree   ├── fast-json-stable-stringify@2.0.0
+21 silly currentTree   ├── figgy-pudding@3.5.1
+21 silly currentTree   ├── figures@3.1.0
+21 silly currentTree   ├── flush-write-stream@1.1.1
+21 silly currentTree   ├── forever-agent@0.6.1
+21 silly currentTree   ├── form-data@2.3.3
+21 silly currentTree   ├── from2@2.3.0
+21 silly currentTree   ├── fs-minipass@1.2.7
+21 silly currentTree   ├── fs-write-stream-atomic@1.0.10
+21 silly currentTree   ├── fs.realpath@1.0.0
+21 silly currentTree   ├── function-bind@1.1.1
+21 silly currentTree   ├── genfun@5.0.0
+21 silly currentTree   ├── get-stream@4.1.0
+21 silly currentTree   ├── getpass@0.1.7
+21 silly currentTree   ├── glob@7.1.6
+21 silly currentTree   ├── graceful-fs@4.2.3
+21 silly currentTree   ├── har-schema@2.0.0
+21 silly currentTree   ├── har-validator@5.1.3
+21 silly currentTree   ├── has-flag@3.0.0
+21 silly currentTree   ├── has-symbols@1.0.1
+21 silly currentTree   ├── has@1.0.3
+21 silly currentTree   ├── hosted-git-info@3.0.2
+21 silly currentTree   ├── http-cache-semantics@3.8.1
+21 silly currentTree   ├─┬ http-proxy-agent@2.1.0
+21 silly currentTree   │ ├── debug@3.1.0
+21 silly currentTree   │ └── ms@2.0.0
+21 silly currentTree   ├── http-signature@1.2.0
+21 silly currentTree   ├─┬ https-proxy-agent@2.2.4
+21 silly currentTree   │ └── debug@3.2.6
+21 silly currentTree   ├── humanize-ms@1.2.1
+21 silly currentTree   ├── iconv-lite@0.4.24
+21 silly currentTree   ├── iferr@0.1.5
+21 silly currentTree   ├── ignore-walk@3.0.3
+21 silly currentTree   ├── imurmurhash@0.1.4
+21 silly currentTree   ├── infer-owner@1.0.4
+21 silly currentTree   ├── inflight@1.0.6
+21 silly currentTree   ├── inherits@2.0.4
+21 silly currentTree   ├── ini@1.3.5
+21 silly currentTree   ├── inquirer@7.0.0
+21 silly currentTree   ├── ip@1.1.5
+21 silly currentTree   ├── is-callable@1.1.5
+21 silly currentTree   ├── is-date-object@1.0.2
+21 silly currentTree   ├── is-fullwidth-code-point@3.0.0
+21 silly currentTree   ├── is-interactive@1.0.0
+21 silly currentTree   ├── is-promise@2.1.0
+21 silly currentTree   ├── is-regex@1.0.5
+21 silly currentTree   ├── is-symbol@1.0.3
+21 silly currentTree   ├── is-typedarray@1.0.0
+21 silly currentTree   ├── is-wsl@2.1.1
+21 silly currentTree   ├── isarray@1.0.0
+21 silly currentTree   ├── isexe@2.0.0
+21 silly currentTree   ├── isstream@0.1.2
+21 silly currentTree   ├── jsbn@0.1.1
+21 silly currentTree   ├── json-parse-better-errors@1.0.2
+21 silly currentTree   ├── json-schema-traverse@0.4.1
+21 silly currentTree   ├── json-schema@0.2.3
+21 silly currentTree   ├── json-stringify-safe@5.0.1
+21 silly currentTree   ├── jsonparse@1.3.1
+21 silly currentTree   ├── JSONStream@1.3.5
+21 silly currentTree   ├── jsprim@1.4.1
+21 silly currentTree   ├── lodash@4.17.15
+21 silly currentTree   ├── log-symbols@3.0.0
+21 silly currentTree   ├── lru-cache@5.1.1
+21 silly currentTree   ├── magic-string@0.25.4
+21 silly currentTree   ├── make-fetch-happen@5.0.2
+21 silly currentTree   ├── mime-db@1.43.0
+21 silly currentTree   ├── mime-types@2.1.26
+21 silly currentTree   ├── mimic-fn@2.1.0
+21 silly currentTree   ├── minimatch@3.0.4
+21 silly currentTree   ├── minimist@0.0.8
+21 silly currentTree   ├── minipass@2.9.0
+21 silly currentTree   ├── minizlib@1.3.3
+21 silly currentTree   ├── mississippi@3.0.0
+21 silly currentTree   ├── mkdirp@0.5.1
+21 silly currentTree   ├─┬ move-concurrently@1.0.1
+21 silly currentTree   │ └── rimraf@2.7.1
+21 silly currentTree   ├── ms@2.1.2
+21 silly currentTree   ├── mute-stream@0.0.8
+21 silly currentTree   ├── node-fetch-npm@2.0.2
+21 silly currentTree   ├─┬ normalize-package-data@2.5.0
+21 silly currentTree   │ ├── hosted-git-info@2.8.5
+21 silly currentTree   │ └── semver@5.7.1
+21 silly currentTree   ├── npm-bundled@1.1.1
+21 silly currentTree   ├── npm-normalize-package-bin@1.0.1
+21 silly currentTree   ├─┬ npm-package-arg@6.1.1
+21 silly currentTree   │ ├── hosted-git-info@2.8.5
+21 silly currentTree   │ └── semver@5.7.1
+21 silly currentTree   ├── npm-packlist@1.4.8
+21 silly currentTree   ├─┬ npm-pick-manifest@3.0.2
+21 silly currentTree   │ └── semver@5.7.1
+21 silly currentTree   ├── npm-registry-fetch@4.0.3
+21 silly currentTree   ├── oauth-sign@0.9.0
+21 silly currentTree   ├── object-inspect@1.7.0
+21 silly currentTree   ├── object-keys@1.1.1
+21 silly currentTree   ├── object.assign@4.1.0
+21 silly currentTree   ├── object.getownpropertydescriptors@2.1.0
+21 silly currentTree   ├── once@1.4.0
+21 silly currentTree   ├── onetime@5.1.0
+21 silly currentTree   ├── open@7.0.0
+21 silly currentTree   ├── ora@4.0.2
+21 silly currentTree   ├── os-homedir@1.0.2
+21 silly currentTree   ├── os-tmpdir@1.0.2
+21 silly currentTree   ├── osenv@0.1.5
+21 silly currentTree   ├─┬ pacote@9.5.8
+21 silly currentTree   │ ├── rimraf@2.7.1
+21 silly currentTree   │ └── semver@5.7.1
+21 silly currentTree   ├── parallel-transform@1.2.0
+21 silly currentTree   ├── path-is-absolute@1.0.1
+21 silly currentTree   ├── path-parse@1.0.6
+21 silly currentTree   ├── performance-now@2.1.0
+21 silly currentTree   ├── process-nextick-args@2.0.1
+21 silly currentTree   ├── promise-inflight@1.0.1
+21 silly currentTree   ├── promise-retry@1.1.1
+21 silly currentTree   ├── protoduck@5.0.1
+21 silly currentTree   ├── psl@1.7.0
+21 silly currentTree   ├── pump@3.0.0
+21 silly currentTree   ├─┬ pumpify@1.5.1
+21 silly currentTree   │ └── pump@2.0.1
+21 silly currentTree   ├── punycode@2.1.1
+21 silly currentTree   ├── qs@6.5.2
+21 silly currentTree   ├── read-package-json@2.1.1
+21 silly currentTree   ├── read-package-tree@5.3.1
+21 silly currentTree   ├─┬ readable-stream@2.3.7
+21 silly currentTree   │ └── safe-buffer@5.1.2
+21 silly currentTree   ├── readdir-scoped-modules@1.1.0
+21 silly currentTree   ├── request@2.88.2
+21 silly currentTree   ├── resolve@1.15.1
+21 silly currentTree   ├── restore-cursor@3.1.0
+21 silly currentTree   ├── retry@0.10.1
+21 silly currentTree   ├── rimraf@3.0.0
+21 silly currentTree   ├── run-async@2.3.0
+21 silly currentTree   ├── run-queue@1.0.3
+21 silly currentTree   ├── rxjs@6.5.3
+21 silly currentTree   ├── safe-buffer@5.2.0
+21 silly currentTree   ├── safer-buffer@2.1.2
+21 silly currentTree   ├─┬ semver-intersect@1.4.0
+21 silly currentTree   │ └── semver@5.7.1
+21 silly currentTree   ├── semver@6.3.0
+21 silly currentTree   ├── signal-exit@3.0.2
+21 silly currentTree   ├── smart-buffer@4.1.0
+21 silly currentTree   ├─┬ socks-proxy-agent@4.0.2
+21 silly currentTree   │ └── agent-base@4.2.1
+21 silly currentTree   ├── socks@2.3.3
+21 silly currentTree   ├── source-map@0.7.3
+21 silly currentTree   ├── sourcemap-codec@1.4.8
+21 silly currentTree   ├── spdx-correct@3.1.0
+21 silly currentTree   ├── spdx-exceptions@2.2.0
+21 silly currentTree   ├── spdx-expression-parse@3.0.0
+21 silly currentTree   ├── spdx-license-ids@3.0.5
+21 silly currentTree   ├── sshpk@1.16.1
+21 silly currentTree   ├── ssri@6.0.1
+21 silly currentTree   ├── stream-each@1.2.3
+21 silly currentTree   ├── stream-shift@1.0.1
+21 silly currentTree   ├─┬ string_decoder@1.1.1
+21 silly currentTree   │ └── safe-buffer@5.1.2
+21 silly currentTree   ├─┬ string-width@4.2.0
+21 silly currentTree   │ ├── ansi-regex@5.0.0
+21 silly currentTree   │ └── strip-ansi@6.0.0
+21 silly currentTree   ├── string.prototype.trimleft@2.1.1
+21 silly currentTree   ├── string.prototype.trimright@2.1.1
+21 silly currentTree   ├── strip-ansi@5.2.0
+21 silly currentTree   ├── supports-color@5.5.0
+21 silly currentTree   ├── symbol-observable@1.2.0
+21 silly currentTree   ├── tar@4.4.13
+21 silly currentTree   ├── through@2.3.8
+21 silly currentTree   ├── through2@2.0.5
+21 silly currentTree   ├── tmp@0.0.33
+21 silly currentTree   ├── tough-cookie@2.5.0
+21 silly currentTree   ├── tslib@1.10.0
+21 silly currentTree   ├── tunnel-agent@0.6.0
+21 silly currentTree   ├── tweetnacl@0.14.5
+21 silly currentTree   ├── type-fest@0.8.1
+21 silly currentTree   ├── typedarray@0.0.6
+21 silly currentTree   ├── unique-filename@1.1.1
+21 silly currentTree   ├── unique-slug@2.0.2
+21 silly currentTree   ├─┬ universal-analytics@0.4.20
+21 silly currentTree   │ └── debug@3.2.6
+21 silly currentTree   ├── uri-js@4.2.2
+21 silly currentTree   ├── util-deprecate@1.0.2
+21 silly currentTree   ├── util-promisify@2.1.0
+21 silly currentTree   ├── uuid@3.4.0
+21 silly currentTree   ├── validate-npm-package-license@3.0.4
+21 silly currentTree   ├── validate-npm-package-name@3.0.0
+21 silly currentTree   ├── verror@1.10.0
+21 silly currentTree   ├── wcwidth@1.0.1
+21 silly currentTree   ├── which@1.3.1
+21 silly currentTree   ├── wrappy@1.0.2
+21 silly currentTree   ├── xtend@4.0.2
+21 silly currentTree   ├── y18n@4.0.0
+21 silly currentTree   └── yallist@3.1.1
+22 silly idealTree lib
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 warn checkPermissions Missing write access to /usr/local/lib/node_modules/@angular/cli
+26 warn checkPermissions Missing write access to /usr/local/lib/node_modules/@angular/cli/node_modules
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: EACCES: permission denied, access '/usr/local/lib/node_modules/@angular/cli'
+31 verbose stack     at Error (native)
+32 verbose cwd /Users/yaakoubborji/Documents/Projects/angular-c10-l3-2
+33 error Darwin 18.2.0
+34 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "uninstall" "-g" "@angular/cli"
+35 error node v6.10.3
+36 error npm  v3.10.10
+37 error path /usr/local/lib/node_modules/@angular/cli
+38 error code EACCES
+39 error errno -13
+40 error syscall access
+41 error Error: EACCES: permission denied, access '/usr/local/lib/node_modules/@angular/cli'
+41 error     at Error (native)
+41 error  { Error: EACCES: permission denied, access '/usr/local/lib/node_modules/@angular/cli'
+41 error     at Error (native)
+41 error   errno: -13,
+41 error   code: 'EACCES',
+41 error   syscall: 'access',
+41 error   path: '/usr/local/lib/node_modules/@angular/cli' }
+42 error Please try running this command again as root/Administrator.
+43 verbose exit [ -13, true ]
